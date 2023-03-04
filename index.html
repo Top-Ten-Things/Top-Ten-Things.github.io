@@ -2,22 +2,25 @@
 	<head>
 		<title>Home</title>
 		<style>
+			@font-face {
+				font-family: 'Calibri';
+				src: url("./Calibri.ttf");
+			}
 			#btn {
 			  border-color: black;
 			  border: 2px solid;
 			  color:black;
-			  padding:20px;
+			  padding: 3%;
 			  border-radius:8px;
-			  margin: 10% 0%;
 			  background-color:white;
-			  font-family:'Times New Roman';
+			  font-family: 'Calibri';
 			  font-size: 30px;
 			  transition-duration: 0.5s;
 			}
 			#btn:hover {
 			  background-color: black;
 			  border-color: white;
-			  color:white;
+			  color: white;
 			}
 			#container {
 				position: absolute;
@@ -26,17 +29,20 @@
 				top: 50%;
 				left: 50%;
 				width: 100%;
+				font-family: 'Calibri';
 			}
 		</style>
 	</head>
 	<body style="margin: 0px 0px; background-image: url(./Background.jpg); background-size: 100% 110%;">
 		<div id="container">
-			<img src="Round Pic.png" style="float: left; margin-left: 10%; width: 32%;">
-			<div style="float: right; width: 50%;">
-				<h1>Hello</h1>
-				<p>dasjflkdsafjkdsa;jfdskaf<br>fdsafdsafdsafdsaf<br>adfdasfdsafdsaf</p>
+			<center>
+			<img src="Round_Pic.png" style="float: left; margin-left: 18%; width: 32%;">
+			<div style="float: right; margin-right: 18%; margin-top: 10%; width: 32%;">
+				<h1 style="display: inline-block; margin: 0px 0px;">Hello</h1>
+				<p style="width: 30%; word-break: break-all;">wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww</p>
 				<button id="btn" onclick="location.href='top_ten.html'">Top Ten List!</button>
 			</div>
+			</center>
 		</div>
 	</body>
 </html>
