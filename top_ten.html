@@ -3,23 +3,39 @@
 		<title>Top Ten Favorite Things!</title>
 		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 		<style>
-			.list {
+			.inside {
 				margin: 0px 0px;
 				z-index: 3;
-				top: 50%;
-				left: 50%;
 				position: absolute;
 				transform: translate(-50%, -50%);
 			}
+			.image {
+				top: 30%;
+				left: 50%;
+				width: 70%;
+			}
+			.button {
+				top: 75%;
+				left: 50%;
+				color: white;
+				font-size: 30px;
+				padding: 5%;
+				border-radius: 10px;
+				background-color: #1C967A;
+			}
 			.square {
+				transform: scale(0.8);
 				width: 18.8%;
 				height: 48.5%;
 				z-index: 1;
 				position: absolute;
 				margin: 0px 0px;
+				border: 2px solid;
+				border-color: #136451;
+				background-color: white;
 			}
 			.square:hover {
-				transform: scale(1.1);
+				transform: scale(1);
 				z-index: 2;
 			}
 			@font-face {
@@ -64,38 +80,48 @@
 			}
 		</style>
 	</head>
-	<body style="margin: 0px 0px; overflow: hidden;">
+	<body style="margin: 0px 0px; overflow: hidden; background-image: url(./static/Background.jpg); background-size: 100% 115%;">
 		<center>
 			<!-- <h1 style="font-family: Arial; font-size: 40px; padding-top: 5%;">Top Ten Favorite Things</h1> -->
-			<div class="square" style="background-image: url(./static/Fencing.png); background-size: 100% 100%; top: 1%; left: 1%;" onclick="location.href='Fencing.html'">
-				<p class="list" style="color: #fcfc7e; font-family: 'Magneto'; font-size: 30px;" onclick="location.href='1.html'">Fencing</p>
+			<div class="square" style=" top: 1%; left: 1%;" onclick="location.href='Fencing.html'">
+				<img class="inside image" src="static/circle_fencing.png">
+				<button class="inside button" style="font-family: 'Magneto';" onclick="location.href='1.html'">Fencing</button>
 			</div>
-			<div class="square" style="background-image: url(./static/Coding.png); background-size: 100% 100%; top: 1%; left: 20.8%;" onclick="location.href='Coding.html'">
-				<p class="list" style="color: #f05454; font-family: 'Kristen ITC'; font-size: 30px;">Coding</p>
+			<div class="square" style="top: 1%; left: 20.8%;" onclick="location.href='Coding.html'">
+				<img class="inside image" src="static/circle_coding.png">
+				<button class="inside button" style="font-family: 'Kristen ITC';" onclick="location.href='1.html'">Coding</button>
 			</div>
-			<div class="square" style="background-image: url(./static/Math.png); background-size: 100% 100%; top: 1%; left: 40.6%;" onclick="location.href='Math.html'">
-				<p class="list" style="color: #ee7ed1; font-family: 'Freestyle Script'; font-size: 60px;">Math</p>
+			<div class="square" style="top: 1%; left: 40.6%;" onclick="location.href='Math.html'">
+				<img class="inside image" src="static/circle_math.png">
+				<button class="inside button" style=" font-size: 50px; font-family: 'Freestyle Script';" onclick="location.href='1.html'">Math</button>
 			</div>
-			<div class="square" style="background-image: url(./static/Harry_Potter.png); background-size: 100% 100%; top: 1%; left: 60.4%;" onclick="location.href='Harry_Potter.html'">
-				<p class="list" style="color: #fc7979; font-family: 'Harry P'; font-size: 50px;">Harry Potter</p>
+			<div class="square" style="top: 1%; left: 60.4%;" onclick="location.href='Harry_Potter.html'">
+				<img class="inside image" src="static/circle_harryp.png">
+				<button class="inside button" style="font-family: 'Harry P'; width: 80%; font-size: 40px;" onclick="location.href='1.html'">Harry Potter</button>
 			</div>
-			<div class="square" style="background-image: url(./static/Reading.png); background-size: 100% 100%; top: 1%; left: 80.2%;" onclick="location.href='Reading.html'">
-				<p class="list" style="font-family: 'MV Boli'; font-size: 30px;">Reading</p>
+			<div class="square" style="top: 1%; left: 80.2%;" onclick="location.href='Reading.html'">
+				<img class="inside image" src="static/circle_reading.png">
+				<button class="inside button" style="font-family: 'MV Boli';" onclick="location.href='1.html'">Reading</button>
 			</div>
-			<div class="square" style="background-image: url(./static/Science.png); background-size: 100% 100%; top: 50.5%; left: 1%;" onclick="location.href='Science.html'">
-				<p class="list" style="font-family: 'Snap ITC'; font-size: 30px;">Science</p>
+			<div class="square" style="top: 50.5%; left: 1%;" onclick="location.href='Science.html'">
+				<img class="inside image" src="static/circle_science.png">
+				<button class="inside button" style="font-family: 'Snap ITC';" onclick="location.href='1.html'">Science</button>
 			</div>
-			<div class="square" style="background-image: url(./static/Minecraft.png); background-size: 100% 100%; top: 50.5%; left: 20.8%;" onclick="location.href='Minecraft.html'">
-				<p class="list" style="color: #fc7979; font-family: 'Bauhaus 93'; font-size: 30px;">Minecraft</p>
+			<div class="square" style="top: 50.5%; left: 20.8%;" onclick="location.href='Minecraft.html'">
+				<img class="inside image" src="static/circle_minecraft.png">
+				<button class="inside button" style="font-family: 'Bauhaus 93';" onclick="location.href='1.html'">Minecraft</button>
 			</div>
-			<div class="square" style="background-image: url(./static/Scouting.png); background-size: 100% 100%; top: 50.5%; left: 40.6%;" onclick="location.href='Scouting.html'">
-				<p class="list" style="color: #fcfc7e; font-family: 'Algerian'; font-size: 30px;">Scouting</p>
+			<div class="square" style="top: 50.5%; left: 40.6%;" onclick="location.href='Scouting.html'">
+				<img class="inside image" src="static/circle_scouting.png">
+				<button class="inside button" style="font-family: 'Algerian';" onclick="location.href='1.html'">Scouting</button>
 			</div>
-			<div class="square" style="background-image: url(./static/Engineering.png); background-size: 100% 100%; top: 50.5%; left: 60.4%;" onclick="location.href='Engineering.html'">
-				<p class="list" style="color: #f05454; font-family: 'Script MT'; font-size: 30px;">Engineering</p>
+			<div class="square" style="top: 50.5%; left: 60.4%;" onclick="location.href='Engineering.html'">
+				<img class="inside image" src="static/circle_engineering.png">
+				<button class="inside button" style="font-family: 'Script MT';" onclick="location.href='1.html'">Engineering</button>
 			</div>
-			<div class="square" style="background-image: url(./static/Escape_Room.png); background-size: 100% 100%; top: 50.5%; left: 80.2%;" onclick="location.href='Escape_Room.html'">
-				<p class="list" style="color: black; font-family: 'Bernard MT Condensed'; font-size: 40px;">Escape Rooms</p>
+			<div class="square" style="top: 50.5%; left: 80.2%;" onclick="location.href='Escape_Room.html'">
+				<img class="inside image" src="static/circle_escaperoom.png">
+				<button class="inside button" style="width: 80%; font-family: 'Bernard MT Condensed';" onclick="location.href='1.html'">Escape Rooms</button>
 			</div>
 		</center>
 	</body>
