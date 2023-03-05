@@ -9,11 +9,6 @@
 				position: absolute;
 				transform: translate(-50%, -50%);
 			}
-			.image {
-				top: 30%;
-				left: 50%;
-				width: 70%;
-			}
 			.button {
 				top: 75%;
 				left: 50%;
@@ -22,6 +17,11 @@
 				padding: 5%;
 				border-radius: 10px;
 				background-color: #1C967A;
+			}
+			.image {
+				top: 30%;
+				left: 50%;
+				width: 70%;
 			}
 			.square {
 				transform: scale(0.8);
@@ -82,7 +82,7 @@
 	</head>
 	<body style="margin: 0px 0px; overflow: hidden; background-image: url(./static/Background.jpg); background-size: 100% 115%;">
 		<center>
-			<!-- <h1 style="font-family: Arial; font-size: 40px; padding-top: 5%;">Top Ten Favorite Things</h1> -->
+			<button class="inside button" style="font-size: 25px; top: 3%; left: 4%; padding: 0.25%;" onclick="location.href='index.html'">Home</button>
 			<div class="square" style=" top: 1%; left: 1%;" onclick="location.href='Fencing.html'">
 				<img class="inside image" src="static/circle_fencing.png">
 				<button class="inside button" style="font-family: 'Magneto';" onclick="location.href='1.html'">Fencing</button>
