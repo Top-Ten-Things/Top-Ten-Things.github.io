@@ -1,2 +1,238 @@
 <html>
+	<head>
+		<title>Reading</title>
+		<style>
+			@font-face {
+				font-family: 'Calibri';
+				src: url("./static/calibri.ttf");
+			}
+			.inside {
+				margin: 0px 0px;
+				z-index: 3;
+				position: absolute;
+			}
+			.button {
+				cursor: pointer;
+				top: 75%;
+				left: 50%;
+				color: white;
+				font-size: 30px;
+				padding: 5%;
+				border-radius: 10px;
+				background-color: #1C967A;
+			}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 50%;
+  position: relative;
+  margin: auto;
+  border: 2px solid;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,1);
+}
+
+/* Caption text */
+.text {
+  display: none;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+		</style>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	</head>
+	<body style="margin: 0px 0px; font-family: 'Calibri';">
+		<center>
+			<button class="inside button" style="font-size: 25px; top: 1%; left: 1%; padding: 0.25%;" onclick="location.href='top_ten.html'">Back to Top Ten</button>
+			<br>
+			<h1>Reading</h1>
+			<p style="font-size: 24px; margin: 0% 20%;">Reading not only helped me learn new topics but also introduced me to a world of new words. My love for words and a dedication for honing my spelling skills helped me emerge as Alvin ISD’s District Spelling Bee Champion 2 years in a row.<br><br></p>
+
+			<div style="display: flex; width: 60%;">
+				<div style="width: 50%; align-self: center;">
+					<img src="static/Reading_2.jpg" width="100%">
+				</div>
+				<div style="width: 50%; align-self: center;">
+					<img src="static/Reading_3.png" width="90%">
+					<br>
+					<br>
+					<img src="static/Reading_4.jpg" width="90%">
+				</div>
+			</div>
+			<p style="font-size: 24px; margin: 0% 20%;"><br>Once I pick up a book and start reading, I have been known to lose complete track of time and space. Check out some of these ‘lost in reading’ moments captured on camera!
+</p>
+			<div class="slideshow-container">
+				<!-- Full-width images with number and caption text -->
+				<div class="mySlides fade">
+					<div class="numbertext">1 / 10</div>
+					<img src="static/Reading_1.jpg" style="height:420px;">
+					<div class="text">Caption Text</div>
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext">2 / 10</div>
+						<img src="static/Reading_5.jpg" style="height:420px">
+					<div class="text">Caption Two</div>
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext">3 / 10</div>
+						<img src="static/Reading_6.jpg" style="height: 420px;">
+					<div class="text">Caption Three</div>
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext">4 / 10</div>
+						<img src="static/Reading_7.jpg" style="height: 420px;">
+					<div class="text">Caption Three</div>
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext">5 / 10</div>
+						<img src="static/Reading_8.jpg" style="height: 420px;">
+					<div class="text">Caption Three</div>
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext">6 / 10</div>
+						<img src="static/Reading_9.jpg" style="height: 420px;">
+					<div class="text">Caption Three</div>
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext">7 / 10</div>
+						<img src="static/Reading_10.jpg" style="height: 420px;">
+					<div class="text">Caption Three</div>
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext">8 / 10</div>
+						<img src="static/Reading_11.jpg" style="height: 420px;">
+					<div class="text">Caption Three</div>
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext">9 / 10</div>
+						<img src="static/Reading_12.jpg" style="height: 420px;">
+					<div class="text">Caption Three</div>
+				</div>
+				<div class="mySlides fade">
+					<div class="numbertext">10 / 10</div>
+						<img src="static/Reading_13.jpg" style="height: 420px;">
+					<div class="text">Caption Three</div>
+				</div>
+				<!-- Next and previous buttons -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+			<!-- The dots/circles -->
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+				<span class="dot" onclick="currentSlide(4)"></span>
+				<span class="dot" onclick="currentSlide(5)"></span>
+				<span class="dot" onclick="currentSlide(6)"></span>
+				<span class="dot" onclick="currentSlide(7)"></span>
+				<span class="dot" onclick="currentSlide(8)"></span>
+				<span class="dot" onclick="currentSlide(9)"></span>
+				<span class="dot" onclick="currentSlide(10)"></span>
+			</div>
+			<br>
+			<br>
+			<script>currentSlide(1);</script>
+		</center>
 </html>
