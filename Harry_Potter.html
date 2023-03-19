@@ -115,6 +115,53 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+.ribbon {
+ font-size: 24px !important;
+ /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+ width: 20%;
+    
+ position: relative;
+ background: #1fcff2;
+ color: white;
+ text-align: center;
+ padding: 0.01em 0.05em; /* Adjust to suit */
+ margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid #1dc0e0;
+ z-index: -1;
+}
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #1999b3 transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
 		</style>
 <script>
 let slideIndex = 1;
@@ -153,17 +200,53 @@ function showSlides(n) {
 		<br>
 		<p style="color: white; font-family: 'Harry P';font-size: 80px; margin: 0 0;">Harry Potter</p>
 		<br><br>
-		<div style="display: flex; height: 45%;">
+		<div class="ribbon">
+			<p class="ribbon-content">Quidditch Mania</p>
+		</div>
+		<br><br>
+		<div style="display: flex; width: 100%;">
 			<div style="width: 50%; align-self: center;">
-				<iframe src="https://scratch.mit.edu/projects/497296728/embed" allowtransparency="true" width="75%" height="100%" frameborder="0" scrolling="no" allowfullscreen></iframe>
+				<img src="static/Potter_6.jpg" width="80%;">
+			</div>
+			<div style="width: 50%; align-self: center;">
+				<p style="color: white; width: 80%;font-size: 24px;">I I have been a Potterhead since I was 5 years old.Something more. I have been a Potterhead since I was 5 years old. Something more. I I have been a Potterhead since I was 5 years old. Something more. I I have been a Potterhead since I was 5 years old. Something more.
+			</div>
+		</div>
+		<br><br>
+		<div class="ribbon">
+			<p class="ribbon-content">Birthday</p>
+		</div>
+		<br>
+		<div style="display: flex; width: 100%;">
+			<div style="width: 50%; align-self: center;">
+				<img src="static/Potter_7.jpg" width="90%;"><br>
+				<p style="color: white; width: 80%;font-size: 24px;">Quidditch with my friends</p>
+			</div>
+			<div style="width: 50%; align-self: center;">
+				<img src="static/Potter_8.jpg" width="90%;"><br>
+				<p style="color: white; width: 80%;font-size: 24px;">Hit the Dementor</p>
+			</div>
+		</div>
+		<br><br>
+		<div class="ribbon">
+			<p class="ribbon-content">Scratch Project</p>
+		</div>
+		<br>
+		<div style="display: flex; height: 55%;">
+			<div style="width: 50%; align-self: center;">
+				<iframe src="https://scratch.mit.edu/projects/497296728/embed" allowtransparency="true" width="75%" height="100%" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
 			</div>
 			<div style="align-self: center; width: 50%;">
-				<div style="width: 75%; height: 60%; overflow-y: scroll;border: 2px dashed cyan;">
+				<div style="width: 75%; height: 100%; overflow-y: scroll;border: 2px dashed cyan;">
 					<p style="color: white; font-size: 24px;">DIRECTIONS:<br><br>W/S = move Player 1 (Harry) up and down<br>Q = Player 1 (Harrry) shoot<br><br>↑ arrow/↓ arrow = move Player 2 (Ron) up and down<br>Space Bar = Player 2 (Ron) shoot<br><br>If spells collide both lose 1 health.<br>If spell hits you, you lose 1 health<br><br>If you hit the head, it does a critical hit!<br>Win games to earn money to buy better spells and health potions.</p>
 				</div>
 			</div>
 		</div>
 		<br>
+		<br>
+		<div class="ribbon">
+			<p class="ribbon-content">Wizarding World</p>
+		</div>
 		<br>
 		<div class="slideshow-container">
 				<!-- Full-width images with number and caption text -->
