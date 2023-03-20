@@ -1,2 +1,65 @@
 <html>
+	<head>
+		<title>Minecaft</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<style>
+			@font-face {
+				font-family: 'Calibri';
+				src: url("./static/calibri.ttf");
+			}
+			.inside {
+				margin: 0px 0px;
+				z-index: 3;
+				position: absolute;
+			}
+			.button {
+				cursor: pointer;
+				top: 75%;
+				left: 50%;
+				color: white;
+				font-size: 30px;
+				border: 2px solid black;
+				padding: 5%;
+				border-radius: 10px;
+				background-color: #1C967A;
+			}
+		</style>
+	</head>
+	<body style="margin: 0px 0px; font-family: 'Calibri';">
+		<center>
+		<div id="main">
+			<button class="inside button" style="font-size: 25px; top: 1%; left: 1%; padding: 0.25%;" onclick="location.href='top_ten.html'">Back to Top Ten</button>
+			<h1>Minecraft</h1>
+			<br>
+			<br>
+			<div style="width:100%; height: 10%; background-color: #374151; position: relative;">
+				<button class="inside button" style="font-size: 25px; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 0.25%;" onclick="location.href='top_ten.html'">Back to Top Ten</button>
+			</div>
+		</div>
+		</center>
+		<script>
+			function newImage(a,b) {
+				var app = "<img class='image' src='static/Minecraft_1.png' style='width: 10%; height: 20%; position: absolute; top: " + b.toString() + "%; left: " + a.toString() + "%;'>"
+				$("body").append(app);
+				console.log(app);
+				console.log("Yes! Yes! Yes!");
+			}
+			function task(i, x, y) {
+				setTimeout(newImage, 150*i, 90*(y%2) - 10*((y%2 + 1)*2 - 3)*x, 20*y);
+			}
+			function logo() {
+				$("body").append("<img class='image' src='static/Minecraft_2.png' style='width: 50%; position: absolute; z-index: 2; top: 50%; left: 50%; transform: translate(-50%, -50%);'>");
+			}
+			$("#main").hide();
+			console.log("Yes!");
+			var change = 1;
+			for (var y = 0; y < 5; y++) {
+				for (var x = 0; x < 10; x++) {
+					task(change, x, y);
+					change++;
+				}
+			}
+			setTimeout(logo, 40*200);
+			setTimeout(function () {$(".image").hide(); $("#main").show();}, 43*200);
+		</script>
 </html>
