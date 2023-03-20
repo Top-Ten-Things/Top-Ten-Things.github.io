@@ -23,8 +23,13 @@
 				background-color: #1C967A;
 			}
 		</style>
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	</head>
 	<body style="margin: 0px 0px; font-family: 'Calibri';">
+		<div id="st" style="margin-left: 7%;">
+		
+		</div>
+		<div id="main">
 		<center>
 		<button class="inside button" style="font-size: 25px; top: 1%; left: 1%; padding: 0.25%;" onclick="location.href='top_ten.html'">Back to Top Ten</button>
 			<h1>CODING</h1>
@@ -116,5 +121,32 @@
 				<button class="inside button" style="font-size: 25px; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 0.25%;" onclick="location.href='top_ten.html'">Back to Top Ten</button>
 			</div>
 		</center>
+		</div>
+		<script>
+			$("#main").hide();
+			var code = "from INTERNET import website;{{function run_website():{}display_text();{}display_images;{}render_website();{{if (website.open_correctly == True):{}run_website();"
+			function show_code(num) {
+				var show = code.charAt(num);
+				$(".bar").remove();
+				if (show == "{") {
+					show = "<br>";
+				}
+				else if (show == "}") {
+					show = "&nbsp;&nbsp;&nbsp;&nbsp;";
+				}
+				$("#st").append("<span style='font-size: 24px;' class='start'>" + show + "</span><span style='font-size: 24px;' class='start bar'>|</span>");
+			}
+			function begin() {
+				$("#st").hide();
+				$("#main").show();
+			}
+			function task(numb) {
+				setTimeout(show_code, 50*numb, numb);
+			}
+			for (var i = 0; i < code.length; i++) {
+				task(i);
+			}
+			setTimeout(begin, 50*code.length + 250);
+		</script>
 	</body>
 </html>
