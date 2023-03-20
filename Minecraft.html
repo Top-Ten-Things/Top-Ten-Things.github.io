@@ -45,7 +45,7 @@
 				console.log("Yes! Yes! Yes!");
 			}
 			function task(i, x, y) {
-				setTimeout(newImage, 150*i, 90*(y%2) - 10*((y%2 + 1)*2 - 3)*x, 20*y);
+				setTimeout(newImage, 100*i, 90*(y%2) - 10*((y%2 + 1)*2 - 3)*x, 20*y);
 			}
 			function logo() {
 				$("body").append("<img class='image' src='static/Minecraft_2.png' style='width: 50%; position: absolute; z-index: 2; top: 50%; left: 50%; transform: translate(-50%, -50%);'>");
@@ -59,7 +59,7 @@
 					change++;
 				}
 			}
-			setTimeout(logo, 40*200);
-			setTimeout(function () {$(".image").hide(); $("#main").show();}, 43*200);
+			setTimeout(logo, 50*100);
+			setTimeout(function () {$(".image").hide(); $("#main").show();}, 60*100);
 		</script>
 </html>
