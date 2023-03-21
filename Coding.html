@@ -122,9 +122,9 @@
 			</div>
 		</center>
 		</div>
-		<script>
+		<!-- <script>
 			$("#main").hide();
-			var code = "from INTERNET import website;{{function run_website():{}display_text();{}display_images;{}render_website();{{if (website.open_correctly == True):{}run_website();"
+			var code = "from INTERNET import website;{{function run_website():{}display_text();{}display_images();{}render_website();{{if (website.open_correctly == True):{}run_website();"
 			function show_code(num) {
 				var show = code.charAt(num);
 				$(".bar").remove();
@@ -141,12 +141,12 @@
 				$("#main").show();
 			}
 			function task(numb) {
-				setTimeout(show_code, 50*numb, numb);
+				setTimeout(show_code, 25*numb, numb);
 			}
 			for (var i = 0; i < code.length; i++) {
 				task(i);
 			}
-			setTimeout(begin, 50*code.length + 250);
-		</script>
+			setTimeout(begin, 25*code.length + 250);
+		</script> -->
 	</body>
 </html>
