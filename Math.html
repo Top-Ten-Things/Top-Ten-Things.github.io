@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title>Math</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 		<style>
 			@font-face {
 				font-family: 'Calibri';
@@ -29,18 +30,26 @@
 		</style>
 	</head>
 	<body style="margin: 0px 0px; font-family: 'Calibri';">
+		<div id="main">
 		<center>
 		<button class="inside button" style="font-size: 25px; top: 1%; left: 1%; padding: 0.25%;" onclick="location.href='top_ten.html'">Back to Top Ten</button>
-		<img src="static/Math_6.jpg" style="width: 100%; height: 90%;">
 		<br>
-		<h1 style="font-size: 50px; font-family: 'Freestyle Script';">MATH</h1>
-		<p>*Sample Text*</p>
+		<h1 style="font-size: 65px; font-family: 'Freestyle Script';">MATH</h1>
+		<br>
+		<div style="display: flex; width 100%;">
+			<div style="width: 50%; align-self: center;">
+				<img src="static/Math_6.jpg" style="width: 99%;">
+			</div>
+			<div style="width: 50%; align-self: center;">
+				<p>*Sample Text*</p>
+			</div>
+		</div>
 		<br>
 		<br>
 		<div style="display: flex; background-color: #D1F6EE;">
 			<div style="width: 50%; flex: 1;">
 				<h2 style="font-size: 40px;">GUI Calculator</h2>
-				<p style="font-size: 24px; margin-left: 3%;">This calculator was one of the first GUI (Graphical User Interface) apps I coded. I wanted to create a project that combined coding with my love for math, so a calculator was the natural answer. It can doo all the basic operations, as well as find the remainder, raise the number to the n<sup>th</sup> power, and take the n<sup>th</sup>root.</p>
+				<p style="font-size: 24px; margin-left: 3%;">This calculator was one of the first GUI (Graphical User Interface) apps I coded. I wanted to create a project that combined coding with my love for math, so a calculator was the natural answer. It can do all the basic operations, as well as find the remainder, raise the number to the n<sup>th</sup> power, and take the n<sup>th</sup>root.</p>
 			</div>
 			<div style="width: 50%; display: flex;">
 				<center>
@@ -61,17 +70,21 @@
 			</div>
 		</div>
 		<br>
-		<div style="display: flex; width: 75%;">
+		
+		<div id="work" style="display: flex; width: 75%;">
 		<div>
 		 <img src="static/Math_3.png" width="100%" style="border: 2px solid; align-self: center;">
 		 </div>
-		 <div>
+		 <div style=" position: relative;">
 		 <img src="static/Math_4.png" width="100%" style="border: 2px solid; align-self: center;">
+		 <div style="transform: translate(-100%, 0%); top: 2px; left: calc(100% + 3px); position: absolute;">
+			<button style="" onclick="fullscreen();">Full screen</button>
+		 </div>
 		 </div>
 		</div>
-		<p style="font-size: 24px;">Counting and Probability Math Sample</p>
+		<p style="font-size: 24px;">AoPS Counting and Probability Math Sample</p>
 		<br>
-		<h2>Awesome Graphs</h2>
+		<h1>Awesome Desmos Graphs</h1>
 		<div style="display: flex; width: 60%;">
 			<div style="width: 50%; align-self: end;">
 				<img width="100%" src="static/Math_6.png" style="border: 2px solid;">
@@ -91,5 +104,20 @@
 			<button class="inside button" style="font-size: 25px; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 0.25%;" onclick="location.href='top_ten.html'">Back to Top Ten</button>
 s		</div>
 		</center>
+		</div>
+		<center id='hide'><br><div style='display: flex; width: 100%;'><div style='width: 50%;'><img src='static/Math_3.png' width='98%' style='border: 2px solid;'></div><div style='width: 50%; position: relative;'><img src='static/Math_4.png' width='98%' style='border: 2px solid;'><div style="transform: translate(-100%, 0%); top: 2px; left: 99%; position: absolute;"><button onclick='normal()'>Normal view</button></div></div></div></center>
+		<script>
+			$("#hide").hide();
+			function fullscreen() {
+				$("#main").hide();
+				$("#hide").show();
+				window.location.hash = "hide";
+			}
+			function normal() {
+				$("#main").show();
+				$("#hide").hide();
+				window.location.hash = "work";
+			}
+		</script>
 	</body>
 </html>
