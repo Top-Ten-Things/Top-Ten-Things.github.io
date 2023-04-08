@@ -50,10 +50,11 @@
 		<br>
 		<br>
 		<div style="background-color: #c4eaf2;">
+		<br>
 		<h1>MATH ACHIEVEMENTS</h1>
 		<p>My passion for problem-solving motivated me to participate and win several awards in different math competitions.</p>
 		<br>
-		<p>American Invitational Mathematics Examination (AIME) Qualifier, 2023 (7th grade)<br><br>American Mathematics Competition 8 (AMC8), 2023 - Honor Roll Certificate (7th grade)<br><br>American Mathematics Competition 10 (AMC10), 2022 - Certificate of Achievement (7th grade)<br><br>North South Foundation (NSF) National Finals - Math Level 2, 2021 - Placed 94th (5th grade)<br><br>Math Kangaroo, 2020 - Level 4 - Placed 4th in Nationals (4th grade)<br><br>Regional Math League, 2018 placed 3rd and qualified for State Level (3rd grade)</p>
+		<p>American Invitational Mathematics Examination (AIME) Qualifier, 2023 (7th grade)<br><br>American Mathematics Competition 8 (AMC8), 2023 - Honor Roll Certificate (7th grade)<br><br>American Mathematics Competition 10 (AMC10), 2022 - Certificate of Achievement (7th grade)<br><br>North South Foundation (NSF) National Finals - Math Level 2, 2021 - Placed 94th (5th grade)<br><br>Math Kangaroo, 2020 - Level 4 - Placed 4th in Nationals (4th grade)<br><br>Regional mathleague.org, 2018 placed 3rd and qualified for State Level (3rd grade)</p>
 		<br>
 		</div>
 		<br>
@@ -65,14 +66,14 @@
 		 <div style=" position: relative;">
 		 <img src="static/Math_4.jpg" width="100%" style="border: 2px solid; align-self: center;">
 		 <div style="transform: translate(-100%, 0%); top: 2px; left: calc(100%); position: absolute;">
-			<button class="button" style="font-size: 12px; padding: auto; top: none; left: none;" onclick="fullscreen();">Full screen</button>
+			<button class="button" style="font-size: 12px; padding: auto; top: none; left: none;" onclick='fullscreen("hide");'>Full screen</button>
 		 </div>
 		 </div>
 		</div>
 		<br>
 		<h1>Teacher Feedback</h1>
 		<br>
-		<img src="static/Math_8.png" width="50%">
+		<img src="static/Math_8.png" style="border: 2px solid black;" width="50%">
 		<br>
 		<h1>APPLICATIONS OF MATH IN REAL LIFE</h1>
 		<div style="display: flex; background-color: #DBD0E9;">
@@ -90,12 +91,35 @@
 		<div style="display: flex; background-color: #D1F6EE;">
 			<div style="width: 50%; flex: 1;">
 				<h2 style="font-size: 40px;">GUI Calculator</h2>
-				<p style="font-size: 24px; margin-left: 3%;">This calculator was one of the first GUI (Graphical User Interface) apps I coded. I wanted to create a project that combined coding with my love for math, so a calculator was the natural answer. It can do all the basic operations, as well as find the remainder, raise the number to the n<sup>th</sup> power, and take the n<sup>th</sup>root.</p>
+				<p style="font-size: 24px; margin-left: 3%;">This calculator was one of the first GUI (Graphical User Interface) apps I coded. I wanted to create a project that combined coding with my love for math, so a calculator was the natural answer. It can perform all the basic operations, as well as find the remainder, raise the number to the n<sup>th</sup> power, and take the n<sup>th</sup>root.</p>
 			</div>
 			<div style="width: 50%; display: flex;">
 				<center>
 				<img src="static/Math_2.png" width="50%" style="align-self: center;">
 				</center>
+			</div>
+		</div>
+		<br>
+		<div>
+			<h1 id="news">KidNuz!</h1>
+			<p style="margin: 0% 7%;">I enjoy sharing my love and passion for math with everyone. When my news podcast, KidNuz, shared the news about the New Orleans High school students that found new way to prove the Pythogorean theorem, they made a few mathematical errors. I was excited to share my understanding of the subject so that all the kids listening to the news could benefit from the right information. And of course, the shoutout I received on the podcast for my efforts was definitely the cherry on top!</p><br>
+			<div style="display: flex; width: 100%;">
+				<div style="width: 50%;">
+					<div style="width: 65%; position: relative">
+						<img src="static/Math_10.png" width="100%" style="border: 2px solid; align-self: center;">
+						<div style="transform: translate(-100%, 0%); top: 2px; left: calc(100%); position: absolute;">
+							<button class="button" style="font-size: 12px; padding: auto; top: none; left: none;" onclick='fullscreen("hide2");'>Full screen</button>
+						</div>
+					</div>
+				</div>
+				<div style=" position: relative; width: 50%">
+					<div style="width: 65%; position: relative">
+						<img src="static/Math_9.png" width="100%" style="border: 2px solid; align-self: center;">
+						<div style="transform: translate(-100%, 0%); top: 2px; left: calc(100%); position: absolute;">
+							<button class="button" style="font-size: 12px; padding: auto; top: none; left: none;" onclick='fullscreen("hide3");'>Full screen</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<br>
@@ -120,18 +144,23 @@
 		</div>
 		</center>
 		</div>
-		<center id='hide'><div style='display: flex; width: 100%;'><div style='width: 50%;'><img src='static/Math_3.jpg' width='98%' style='border: 2px solid;'></div><div style='width: 50%; position: relative;'><img src='static/Math_4.jpg' width='98%' style='border: 2px solid;'><div style="transform: translate(-100%, 0%); top: 2px; left: 98.5%; position: absolute;"><button class="button" style="font-size: 12px; padding: auto; top: none; left: none;" onclick='normal()'>Normal view</button></div></div></div></center>
+		<center id='hide'><div style='display: flex; width: 100%;'><div style='width: 50%;'><img src='static/Math_3.jpg' width='98%' style='border: 2px solid;'></div><div style='width: 50%; position: relative;'><img src='static/Math_4.jpg' width='98%' style='border: 2px solid;'><div style="transform: translate(-100%, 0%); top: 2px; left: 98.5%; position: absolute;"><button class="button" style="font-size: 12px; padding: auto; top: none; left: none;" onclick='normal("hide", "work")'>Normal view</button></div></div></div></center>
+		<center id='hide2'><img src='static/Math_10.png' width='98%' style='border: 2px solid;'><div style="transform: translate(-100%, 0%); top: 2px; left: calc(99% - 2px); position: absolute;"><button class="button" style="font-size: 12px; padding: auto; top: none; left: none;" onclick='normal("hide2", "news")'>Normal view</button></div></center>
+		<center id='hide3'><img src='static/Math_9.png' width='98%' style='border: 2px solid;'><div style="transform: translate(-100%, 0%); top: 2px; left: calc(99% - 2px); position: absolute;"><button class="button" style="font-size: 12px; padding: auto; top: none; left: none;" onclick='normal("hide3", "news")'>Normal view</button></div></center>
 		<script>
 			$("#hide").hide();
-			function fullscreen() {
+			$("#hide2").hide();
+			$("#hide3").hide();
+			var ids = ["hide", "hide2", "hide3"];
+			function fullscreen(id) {
 				$("#main").hide();
-				$("#hide").show();
-				window.location.hash = "hide";
+				$("#" + id).show();
+				window.location.hash = id;
 			}
-			function normal() {
+			function normal(id, retur) {
 				$("#main").show();
-				$("#hide").hide();
-				window.location.hash = "work";
+				$("#" + id).hide();
+				window.location.hash = retur;
 			}
 		</script>
 	</body>
