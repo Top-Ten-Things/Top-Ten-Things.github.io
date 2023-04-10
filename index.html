@@ -7,6 +7,7 @@
 				src: url("./static/calibri.ttf");
 			}
 			#btn {
+			  margin-right: 7%;
 		      cursor: pointer;
 			  border-color: black;
 			  border: 2px solid;
@@ -36,14 +37,26 @@
 	</head>
 	<body style="margin: 0px 0px; background-image: url(./static/Background.jpg); background-size: 100% 110%;">
 		<div id="container">
-			<center>
-			<img src="static/Round_Pic.PNG" style="float: left; margin-left: 18%; width: 32%;">
-			<div style="float: right; margin-right: 18%; margin-top: 0%; width: 32%;">
-				<p style="margin: 0px 0px; font-size: 70px;">Hello</p>
-				<p style="width: 80%; margin-bottom: 7%; margin-top: 2%; font-size: 30px;">Hi! I’m Neev Shaw, and I am a fan of escape rooms, wordle, technology and a good chicken biryani. I designed and coded this website to show my top ten favorite interests and passions! I hope you enjoy it!</p>
-				<button id="btn" onclick="location.href='top_ten.html'">Top Ten List!</button>
+		<center>
+			<div style="display: flex;">
+			<div style="width: 50%;">
+				<img src="static/Round_Pic.PNG" style="width: 60%; margin-left: 20%;">
+			</div>
+			<div style="width: 50%;">
+				<p style="font-size: 70px; margin-bottom: 3%; margin-right: 7%; margin-top: 0%;">Hello!</p>
+				<p style="font-size: 24px; margin-right: 7%;">I’m Neev Shaw, and I have a passion for STEM, escape rooms, wordle, and a good chicken biryani!<br><br>I am an astrophysics lover, a fencer, a mathlete, an avid coder, a forever Harry Potter fan, and a student of anything interesting.</p>
+			</div>
 			</div>
 			</center>
+			<br>
+			<div style="width: 100%; display: flex;">
+				<div style="width: 10%;"></div>
+				<div style="width: 60%;">
+				<span style="font-size: 24px;">I designed and coded this website for the Part B prompt, Create a Top 10 list of your passions or interests, of the Caroline D. Bradley Scholarship Application.</span>
+				</div>
+				<div style="width: 30%;">
+					<button id="btn" onclick="location.href='top_ten.html'">Top Ten List!</button>
+				</div>
 		</div>
 	</body>
 </html>
